@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.green-text{
+	color: #a9d232;;
+}
+.green{
+	background-color: #a9d232;
+}
+
+.light-green-text{
+	color: #f2fdd3;
+}
+.light-green{
+	background-color: #f2fdd3;
+}
+
+body{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
