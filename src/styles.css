@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+	--red: #a12024;
+	--copper: #9c5652;
+	--cactus: #91874b;
+	--pearl: #fffcf4;
+	--flame: #d55929;
+	--sand: #ac8d7b;
+}
+
+
 .green-text{
 	color: #a9d232;;
 }
@@ -21,5 +31,5 @@ body{
 }
 
 *{
-	font-family: Helvetica;
+	font-family: Arial, Helvetica, sans-serif;
 }

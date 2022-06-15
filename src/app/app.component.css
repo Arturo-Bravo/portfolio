@@ -4,4 +4,13 @@
 	position: relative;
 	left: 0;
 	top: 0;
+	background-color: var(--pearl);
+}
+
+a {
+	color: var(--red) !important;
+}
+
+header{
+	background-color: var(--cactus);
 }
