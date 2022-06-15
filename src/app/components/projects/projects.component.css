@@ -2,6 +2,8 @@
 	min-height: 10em;
 	display: flex;
 	align-items: flex-end;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 .title-text{
 	background-color: var(--sand);
@@ -10,10 +12,23 @@
 
 #teach{
 	background-image: url(../pics/teachsafely.png);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
+}
+
+#ctran{
+	background-image: url(../pics/c-tran.png);
 }
 
 .project{
 	width: 20em;
+	margin: 1em 0;
+}
+
+.desc{
+	background-color: var(--red);
+	color: white;
+}
+
+.skills > div{
+	display: inline-block;
+	padding: 0.3em .5em;
 }
