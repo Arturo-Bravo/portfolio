@@ -1,0 +1,19 @@
+.title{
+	min-height: 10em;
+	display: flex;
+	align-items: flex-end;
+}
+.title-text{
+	background-color: var(--sand);
+	width: 100%;
+}
+
+#teach{
+	background-image: url(../pics/teachsafely.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.project{
+	width: 20em;
+}
