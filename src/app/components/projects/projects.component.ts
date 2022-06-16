@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
 
   // colors: frameworks-yellow, languages-black, style-blue, other-orange, github-purple
-  projects: {name: string, pic: string, tags: {skill: string, color: string}[], desc: string }[] = [
+  theProject: {name: string, pic: string, tags: {skill: string, color: string}[], desc: string, link?:string } | null = null
+  projects: {name: string, pic: string, tags: {skill: string, color: string}[], desc: string, link?:string }[] = [
     {
       name: "Steam Compare App",
       pic: "steam",
@@ -20,7 +21,8 @@ export class ProjectsComponent implements OnInit {
         {skill: 'Git', color: 'git'},
         {skill: 'REST API', color: 'other'}
       ],
-      desc: "Created a React application for users to see insights about their steam account. Worked in a team of 3 people."
+      desc: "Created a React application for users to see insights about their steam account. Worked in a team of 3 people.",
+      link: 'https://maxoakes.github.io/steam-compare/'
     },
     {
       name: "Teach Safely (PSU Senior Capstone)",
@@ -32,7 +34,8 @@ export class ProjectsComponent implements OnInit {
         {skill: 'Git', color: 'purple'},
         {skill: 'API', color: 'orange'}
       ],
-      desc: "Worked in a team of seven people to develop a website for shop teachers to handle their classes and lessons."
+      desc: "Worked in a team of seven people to develop a website for shop teachers to handle their classes and lessons.",
+      link: 'https://www.teachsafely.com/'
     },
     {
       name: "C-Tran Traffic Data",
@@ -67,4 +70,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  selectProj(selected: {name: string, pic: string, tags: {skill: string, color: string}[], desc: string, link?:string }){
+    this.theProject = selected
+  }
 }
