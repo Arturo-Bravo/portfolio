@@ -35,23 +35,22 @@
 
 .skills > div{
 	display: inline-block;
-	padding: 0.3em .5em;
+	padding: 0.1em .5em;
 }
 
 
 .other{
-	background-color: #FA8F0E;
+	border-bottom: 2px solid #FA8F0E;
 }
 .frame{
-	background-color: #FEC121;
+	border-bottom: 2px solid #FEC121;
 }
 .lang{
-	background-color: black;
-	color: white;
+	border-bottom: 2px solid black;
 }
 .style{
-	background-color: #52BDD3;
+	border-bottom: 2px solid #52BDD3;
 }
 .git{
-	background-color: #911C7E;
+	border-bottom: 2px solid #911C7E
 }
