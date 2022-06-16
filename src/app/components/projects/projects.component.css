@@ -13,12 +13,14 @@
 #teach{
 	background-image: url(../pics/teachsafely.png);
 }
-
 #ctran{
 	background-image: url(../pics/c-tran.png);
 }
 #steam{
 	background-image: url(../pics/steamcompare.png);
+}
+#frupal{
+	background-image: url(../pics/frupal.png);
 }
 
 .project{
@@ -34,4 +36,22 @@
 .skills > div{
 	display: inline-block;
 	padding: 0.3em .5em;
+}
+
+
+.other{
+	background-color: #FA8F0E;
+}
+.frame{
+	background-color: #FEC121;
+}
+.lang{
+	background-color: black;
+	color: white;
+}
+.style{
+	background-color: #52BDD3;
+}
+.git{
+	background-color: #911C7E;
 }
