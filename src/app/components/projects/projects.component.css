@@ -17,6 +17,9 @@
 #ctran{
 	background-image: url(../pics/c-tran.png);
 }
+#steam{
+	background-image: url(../pics/steamcompare.png);
+}
 
 .project{
 	width: 20em;
