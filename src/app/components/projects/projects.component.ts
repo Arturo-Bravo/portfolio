@@ -73,4 +73,7 @@ export class ProjectsComponent implements OnInit {
   selectProj(selected: {name: string, pic: string, tags: {skill: string, color: string}[], desc: string, link?:string }){
     this.theProject = selected
   }
+  closeProj(){
+    this.theProject = null
+  }
 }

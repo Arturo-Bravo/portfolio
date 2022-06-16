@@ -60,3 +60,20 @@
 .git{
 	border-bottom: 2px solid #911C7E
 }
+
+
+.pop{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.feature{
+	background-color: var(--pearl);
+}

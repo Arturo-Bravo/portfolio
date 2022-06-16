@@ -9,6 +9,14 @@
 	</div>
 </div>
 
-<div *ngIf="theProject">
-
+<div *ngIf="theProject" class="pop">
+	<div class="feature">
+		<div class="close" (click)="closeProj()">CLOSE</div>
+		<div class="">
+			{{theProject.name}}
+		</div>
+		<div *ngFor="let tag of theProject.tags" [className]="tag.color">
+			{{tag.skill}}
+		</div>
+	</div>	
 </div>
