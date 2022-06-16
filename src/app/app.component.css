@@ -24,3 +24,7 @@ header{
 .nav{
 	padding: 0;
 }
+
+h1{
+	color: var(--pearl);
+}
