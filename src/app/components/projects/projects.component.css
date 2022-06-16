@@ -3,11 +3,13 @@
 	display: flex;
 	align-items: flex-end;
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-position: center bottom;
+	width: 30vw;
+	height: 30vw;
+	object-fit: cover;
 }
 .title-text{
 	background-color: var(--sand);
-	width: 100%;
 }
 
 #teach{
@@ -24,7 +26,7 @@
 }
 
 .project{
-	width: 20em;
+	width: 100%;
 	margin: 1em 0;
 }
 
