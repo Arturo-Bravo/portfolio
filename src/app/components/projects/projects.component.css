@@ -20,7 +20,7 @@
 	color: inherit;
 	text-decoration: none;
 	position: relative;
-	padding: 0.5em 0.5em;
+	padding: 0.2em 0.4em;
 	background-color: var(--flame);
 	display: inline-block;
 	margin: 0.5em 0 0 0;
@@ -31,12 +31,32 @@
 	content: '';
 	border-bottom: 2px solid black;
 	transform: scaleX(0);
-	transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s linear;
 	transform-origin:  0% 50%;
-
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 }
-.link:hover:after{
+.link:hover:after,
+.top:hover:after{
 	transform: scaleX(1);
+}
+.top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.top:after{
+	display: block;
+	content: '';
+	border-top: 2px solid black;
+	transform: scaleX(0);
+	transition: transform 0.3s linear;
+	transform-origin:  100% 50%;
 }
 
 
