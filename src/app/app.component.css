@@ -7,11 +7,11 @@
 	background-color: var(--pearl);
 }
 
-a {
+.nav-link{
 	color: var(--sand) !important;
 	border: 2px solid transparent;
 }
-a:hover{
+.nav-link:hover{
 	border-bottom: 2px solid var(--flame);
 	color: var(--flame) !important;
 }
@@ -45,4 +45,9 @@ li{
 ul{
 	padding: 0;
 	margin: 0;
+}
+
+.link{
+	color: inherit;
+	text-decoration: none;
 }
