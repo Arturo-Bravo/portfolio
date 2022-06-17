@@ -25,6 +25,7 @@ header{
 	padding: 0;
 }
 
-h1{
-	color: var(--pearl);
+.intro{
+	background-color: var(--red);
+	color: white;
 }

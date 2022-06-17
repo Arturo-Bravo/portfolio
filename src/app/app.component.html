@@ -16,6 +16,16 @@
       </div>
     </nav>
   </header>
+  <div *ngIf="router.url == '/'" class="intro container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <h1 class="p-4">Hello, I am Arturo Bravo</h1>
+        <p class="px-5">
+          Please take a look around. The projects I have displayed are ones where I learned a great deal from or I genuinely enjoyed doing.
+        </p>
+      </div>
+    </div>  
+  </div>
   <router-outlet></router-outlet>
 
 </div>

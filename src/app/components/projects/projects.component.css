@@ -157,3 +157,7 @@
 		opacity: 1;
 	}
 }
+
+.projects{
+	background-color: var(--red);
+}
