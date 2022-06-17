@@ -15,8 +15,16 @@
 		<div class="">
 			{{theProject.name}}
 		</div>
-		<div *ngFor="let tag of theProject.tags" [className]="tag.color">
-			{{tag.skill}}
+		<div class="">
+			{{theProject.desc}}
+		</div>
+		<div class="skills">
+			<div *ngFor="let tag of theProject.tags" [className]="tag.color" >
+				{{tag.skill}}
+			</div>
+		</div>	
+		<div *ngIf="theProject.link">
+			<a href="{{theProject.link}}" target="_blank">Link To Site</a>
 		</div>
 	</div>	
 </div>

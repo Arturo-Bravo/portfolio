@@ -32,6 +32,7 @@
 .project{
 	width: 100%;
 	margin: 1em 0;
+	cursor: pointer;
 }
 
 .desc{
@@ -76,4 +77,19 @@
 
 .feature{
 	background-color: var(--pearl);
+	width: 40%;
+	height: 40%;
+	padding: 1em;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	animation: fade-in;
+	animation-duration: 1s;
+}
+
+@keyframes fade-in{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }

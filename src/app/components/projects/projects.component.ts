@@ -28,11 +28,11 @@ export class ProjectsComponent implements OnInit {
       name: "Teach Safely (PSU Senior Capstone)",
       pic: "teach",
       tags: [
-        {skill: 'Vue', color: 'yellow'},
-        {skill: 'CSS', color: 'blue'},
-        {skill: 'Typescript', color: 'black'},
-        {skill: 'Git', color: 'purple'},
-        {skill: 'API', color: 'orange'}
+        {skill: 'Vue', color: 'frame'},
+        {skill: 'CSS', color: 'style'},
+        {skill: 'Typescript', color: 'lang'},
+        {skill: 'Git', color: 'git'},
+        {skill: 'API', color: 'other'}
       ],
       desc: "Worked in a team of seven people to develop a website for shop teachers to handle their classes and lessons.",
       link: 'https://www.teachsafely.com/'
