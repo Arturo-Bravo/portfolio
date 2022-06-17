@@ -11,7 +11,9 @@
 
 <div *ngIf="theProject" class="pop">
 	<div class="feature">
-		<div class="close" (click)="closeProj()">CLOSE</div>
+		<div class="close" (click)="closeProj()">
+			<mat-icon>close</mat-icon>
+		</div>
 		<div class="">
 			{{theProject.name}}
 		</div>
