@@ -78,11 +78,24 @@ export class ProjectsComponent implements OnInit {
       elem[i].classList.add('blur');
     }
   }
-  closeProj(){
-    this.theProject = null
+  delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
+  }
+  async closeProj(){
     let elem = document.getElementsByClassName('toBlur') as HTMLCollectionOf<HTMLElement>;
     for(let i = 0; i<elem.length; i++){
-      elem[i].classList.remove('blur')
+      elem[i].classList.add('unBlur')
     }
+
+    let fade = document.getElementById('feature');
+    fade?.classList.add('unFade')
+    console.log(fade)
+
+    await this.delay(600);
+    for(let i = 0; i<elem.length; i++){
+      elem[i].classList.remove('blur')
+      elem[i].classList.remove('unBlur')
+    }
+    this.theProject = null
   }
 }

@@ -138,7 +138,7 @@
 	cursor: pointer;
 }
 
-.feature{
+#feature{
 	background-color: var(--pearl);
 	width: 40%;
 	min-height: 40%;
@@ -157,6 +157,11 @@
 	}
 }
 
+.unFade{
+	transition: opacity 0.6s ease-in-out;
+	opacity: 0;
+}
+
 .blur{
 	animation: slow 0.6s;
 	animation-fill-mode: forwards;
@@ -171,6 +176,21 @@
 		transform: scale(1.2);
 	}
 }
+
+.unBlur{
+	animation: fast 0.6s;
+}
+@keyframes fast{
+	0%{
+		filter: blur(10px);
+		transform: scale(1.2);
+	}
+	100%{
+		filter: none !important;
+		transform: scale(1) !important;
+	}
+}
+
 
 .projects{
 	background-color: var(--red);
