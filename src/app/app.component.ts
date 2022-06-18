@@ -17,7 +17,14 @@ export class AppComponent {
     this.router = _router
   }
 
-  toggleMenu(){
+  async toggleMenu(){
+    if(this.navShow === true){
+      let menu = document.getElementById('menu')
+      menu?.classList.add('slide-up')
+      await this.delay(600);
+      menu?.classList.remove('slide-up')
+    }
+
     this.navShow = !this.navShow
   }
 
@@ -26,5 +33,9 @@ export class AppComponent {
       this.navShow = false;
     }
     
+  }
+
+  delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
   }
 }

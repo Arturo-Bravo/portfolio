@@ -89,7 +89,6 @@ export class ProjectsComponent implements OnInit {
 
     let fade = document.getElementById('feature');
     fade?.classList.add('unFade')
-    console.log(fade)
 
     await this.delay(600);
     for(let i = 0; i<elem.length; i++){
