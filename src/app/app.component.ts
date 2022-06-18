@@ -9,7 +9,12 @@ import { Router } from '@angular/router';
 export class AppComponent {
   router: Router;
   title = 'Arturo Bravo';
+  navShow: boolean = false;
   constructor(private _router: Router) {
     this.router = _router
+  }
+
+  toggleMenu(){
+    this.navShow = !this.navShow
   }
 }

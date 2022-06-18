@@ -34,6 +34,47 @@ header{
 .nav{
 	padding: 0;
 }
+.menu{
+	display: none;
+}
+
+.fullMenu{
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.nav-item{
+		display: none;
+	}	
+	.nav-link:hover{
+		border: none;
+	}
+	.nav-link{
+		border: none;
+	}
+	.nav{
+		justify-content: end !important;
+	}
+	.menu{
+		display: block;
+		text-align: end;
+		padding-right: 1em !important;
+		/* justify-content: end; */
+	}
+	.fullMenu{
+		display: block;
+		height: 100vh;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: var(--pearl);
+		z-index: 1;
+	}
+}
+.navbar{
+
+}
 
 .intro{
 	background-color: var(--red);

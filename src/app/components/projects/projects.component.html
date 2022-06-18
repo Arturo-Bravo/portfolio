@@ -1,6 +1,6 @@
 <div class="projects p-4 toBlur">
 	<div *ngFor="let project of projects" class="project row justify-content-center" >
-			<img [src]="project.pic" [id]="project.pic" class="title col-8" (click)="selectProj(project)">
+			<img [src]="project.pic" [id]="project.pic" class="title col-8" alt="{{project.name}} image" (click)="selectProj(project)">
 			<div class="title-text px-2 col-4" (click)="selectProj(project)">
 				{{project.name}}
 			</div>

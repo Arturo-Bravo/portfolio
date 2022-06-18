@@ -13,9 +13,27 @@
             <a routerLink="/projects" class="nav-link">Projects</a>
           </li>
         </ul>
+        <div class="menu"><mat-icon class="nav-link" (click)="toggleMenu()">menu</mat-icon></div>
+
       </div>
     </nav>
   </header>
+  <div *ngIf="navShow" class="fullMenu">
+    <div class="close">
+      <mat-icon (click)="toggleMenu()">close</mat-icon>
+    </div>
+    <ul>
+      <li class="mx-1">
+        <a routerLink="/" class="nav-link" (click)="toggleMenu()">Home</a>
+      </li>
+      <li class=" mx-1">
+        <a routerLink="/about" class="nav-link" (click)="toggleMenu()">About</a>
+      </li>
+      <li class="mx-1">
+        <a routerLink="/projects" class="nav-link" (click)="toggleMenu()">Projects</a>
+      </li>
+    </ul>
+  </div>
   <div *ngIf="router.url == '/'" class="intro container-fluid">
     <div class="row justify-content-center">
       <div class="col-8">
