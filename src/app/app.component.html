@@ -18,11 +18,11 @@
       </div>
     </nav>
   </header>
-  <div *ngIf="navShow" class="fullMenu">
+  <div *ngIf="navShow" class="fullMenu d-flex justify-content-center align-items-center">
     <div class="close">
       <mat-icon (click)="toggleMenu()">close</mat-icon>
     </div>
-    <ul>
+    <ul class="h-75 d-flex flex-column justify-content-center align-items-center">
       <li class="mx-1">
         <a routerLink="/" class="nav-link" (click)="toggleMenu()">Home</a>
       </li>

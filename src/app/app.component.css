@@ -71,6 +71,12 @@ header{
 		background-color: var(--pearl);
 		z-index: 1;
 	}
+	.close{
+		position: absolute;
+		right: 0px;
+		top: 0rem;
+		padding: 0.5rem 0.3rem 0 0;
+	}
 }
 .navbar{
 
