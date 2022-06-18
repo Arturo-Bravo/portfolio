@@ -1,7 +1,7 @@
 <div class="projects p-4 toBlur">
-	<div *ngFor="let project of projects" class="project row justify-content-center" (click)="selectProj(project)">
-			<div [id]="project.pic" class="title col-8"></div>
-			<div class="title-text px-2 col-4">
+	<div *ngFor="let project of projects" class="project row justify-content-center" >
+			<div [id]="project.pic" class="title col-8" (click)="selectProj(project)"></div>
+			<div class="title-text px-2 col-4" (click)="selectProj(project)">
 				{{project.name}}
 			</div>
 	</div>

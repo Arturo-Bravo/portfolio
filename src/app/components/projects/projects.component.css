@@ -4,9 +4,10 @@
 	align-items: flex-end;
 	background-repeat: no-repeat;
 	background-position: center center;
-	width: 30vw;
-	height: 30vw;
+	width: 25vw;
+	height: 25vw;
 	object-fit: cover;
+	cursor: pointer;
 }
 .title-text{
 	background-color: var(--red);
@@ -16,6 +17,7 @@
 	font-size: calc(0.5em + 2vw);
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 }
 
 .link{
@@ -87,6 +89,7 @@
 }
 #steam{
 	background-image: url(../pics/steamcompare2.png);
+	background-position: center top;
 }
 #frupal{
 	background-image: url(../pics/frupal.png);
@@ -94,7 +97,6 @@
 
 .project{
 	margin: 1em 0;
-	cursor: pointer;
 }
 
 .desc{
