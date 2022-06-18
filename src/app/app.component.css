@@ -13,7 +13,7 @@
 }
 
 .nav-link{
-	color: var(--sand) !important;
+	color: var(--red) !important;
 	border: 2px solid transparent;
 }
 .nav-link:hover{
@@ -22,7 +22,7 @@
 }
 
 header{
-	background-color: var(--dark);
+	background-color: var(--pearl);
 }
 
 .nav > *{
@@ -37,8 +37,11 @@ header{
 
 .intro{
 	background-color: var(--red);
-	color: white;
+	color: var(--pearl);
 	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 li{
