@@ -12,7 +12,7 @@ export class ProjectsComponent implements OnInit {
   projects: {name: string, pic: string, tags: {skill: string, color: string}[], desc: string, link?:string }[] = [
     {
       name: "Steam Compare App",
-      pic: "steam",
+      pic: "../../assets/pics/steamcompare2.png",
       tags: [
         {skill: 'React', color: 'frame'},
         {skill: 'CSS', color: 'style'},
@@ -26,7 +26,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: "Teach Safely (PSU Senior Capstone)",
-      pic: "teach",
+      pic: "../../assets/pics/hero-image.jpg",
       tags: [
         {skill: 'Vue', color: 'frame'},
         {skill: 'CSS', color: 'style'},
@@ -39,7 +39,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: "C-Tran Traffic Data",
-      pic: "ctran",
+      pic: "../../assets/pics/c-tran.png",
       tags: [
         {skill: 'Python', color: 'lang'},
         {skill: 'SQL', color: 'lang'},
@@ -53,7 +53,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: "Kingdom of Frupal",
-      pic: "frupal",
+      pic: "../../assets/pics/frupal.png",
       tags: [
         {skill: 'C++', color: 'lang'},
         {skill: 'ncurses', color: 'frame'},
