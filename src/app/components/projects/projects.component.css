@@ -9,7 +9,7 @@
 	object-fit: cover;
 }
 .title-text{
-	background-color: var(--sand);
+	background-color: var(--dark);
 	color: var(--pearl);
 	font-size: calc(0.5em + 2vw);
 	display: flex;
@@ -90,7 +90,6 @@
 }
 
 .project{
-	width: 100%;
 	margin: 1em 0;
 	cursor: pointer;
 }

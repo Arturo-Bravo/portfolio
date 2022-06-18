@@ -1,11 +1,9 @@
 <div class="projects p-4">
-	<div *ngFor="let project of projects">
-		<div class="project row" (click)="selectProj(project)">
+	<div *ngFor="let project of projects" class="project row justify-content-center" (click)="selectProj(project)">
 			<div [id]="project.pic" class="title col-8"></div>
 			<div class="title-text px-2 col-4">
 				{{project.name}}
 			</div>
-		</div>
 	</div>
 </div>
 
