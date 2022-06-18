@@ -4,7 +4,10 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  host: {
+    '(window:resize)': 'onResize($event)'
+  }
 })
 export class AppComponent {
   router: Router;
@@ -16,5 +19,12 @@ export class AppComponent {
 
   toggleMenu(){
     this.navShow = !this.navShow
+  }
+
+  onResize(event: { target: { innerWidth: any; }; }){
+    if(event.target.innerWidth > 600){
+      this.navShow = false;
+    }
+    
   }
 }
