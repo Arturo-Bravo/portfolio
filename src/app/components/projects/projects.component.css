@@ -3,14 +3,16 @@
 	display: flex;
 	align-items: flex-end;
 	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position: center center;
 	width: 30vw;
 	height: 30vw;
 	object-fit: cover;
 }
 .title-text{
-	background-color: var(--dark);
+	background-color: var(--red);
 	color: var(--pearl);
+	border: 5px solid var(--pearl);
+	border-left: none;
 	font-size: calc(0.5em + 2vw);
 	display: flex;
 	align-items: center;
@@ -78,6 +80,7 @@
 
 #teach{
 	background-image: url(../pics/hero-image.jpg);
+	background-position: 40% 70%;
 }
 #ctran{
 	background-image: url(../pics/c-tran.png);
