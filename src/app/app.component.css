@@ -5,6 +5,11 @@
 	left: 0;
 	top: 0;
 	background-color: var(--pearl);
+	display: flex;
+	flex-flow: column;
+}
+.text-primary{
+	flex: 0 1 auto;
 }
 
 .nav-link{
@@ -33,6 +38,7 @@ header{
 .intro{
 	background-color: var(--red);
 	color: white;
+	flex: 1 1 auto;
 }
 
 li{
