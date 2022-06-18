@@ -72,8 +72,17 @@ export class ProjectsComponent implements OnInit {
 
   selectProj(selected: {name: string, pic: string, tags: {skill: string, color: string}[], desc: string, link?:string }){
     this.theProject = selected
+
+    let elem = document.getElementsByClassName('toBlur') as HTMLCollectionOf<HTMLElement>;
+    for(let i = 0; i<elem.length; i++){
+      elem[i].classList.add('blur');
+    }
   }
   closeProj(){
     this.theProject = null
+    let elem = document.getElementsByClassName('toBlur') as HTMLCollectionOf<HTMLElement>;
+    for(let i = 0; i<elem.length; i++){
+      elem[i].classList.remove('blur')
+    }
   }
 }
