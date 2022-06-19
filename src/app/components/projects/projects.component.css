@@ -168,6 +168,11 @@
 	opacity: 0;
 }
 
+.thumb{
+	height: 50%;
+	width: 50%;
+}
+
 .projects{
 	background-color: var(--red);
 }

@@ -13,9 +13,10 @@
 			<mat-icon class="close" (click)="closeProj()">close</mat-icon>
 		</div>
 		<div class="p-4">
-			<div class="">
+			<div class="h2">
 				{{theProject.name}}
 			</div>
+			<img [src]="theProject.pic" alt="{{theProject.name}} thumbnail" class="thumb">
 			<div class="">
 				{{theProject.desc}}
 			</div>
