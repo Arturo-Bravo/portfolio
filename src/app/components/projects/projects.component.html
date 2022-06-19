@@ -17,10 +17,13 @@
 				{{theProject.name}}
 			</div>
 			<img [src]="theProject.pic" alt="{{theProject.name}} thumbnail" class="thumb">
-			<div class="">
+			<div class="mt-2">
 				{{theProject.desc}}
 			</div>
-			<div class="skills">
+			<div class="mt-2 h3">
+				Technologies Used:
+			</div>
+			<div class="skills mb-2">
 				<div *ngFor="let tag of theProject.tags" [className]="tag.color" >
 					{{tag.skill}}
 				</div>

@@ -58,7 +58,6 @@ export class ProjectsComponent implements OnInit {
         {skill: 'C++', color: 'lang'},
         {skill: 'ncurses', color: 'frame'},
         {skill: 'Git', color: 'git'},
-        {skill: 'Scrum', color: 'other'},
       ],
       desc: `Developed a game with 4 other people following a scrum methodology for project management.`
     },
