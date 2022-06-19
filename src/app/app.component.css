@@ -97,7 +97,10 @@ header{
 		position: absolute;
 		right: 0px;
 		top: 0rem;
-		padding: 0.8rem 0.5rem 0 0;
+		padding: 1rem 0.5rem 0 0;
+	}
+	.close:hover{
+		color: var(--flame);
 	}
 }
 .navbar{
