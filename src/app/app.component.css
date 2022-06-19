@@ -52,6 +52,9 @@ header{
 	.nav-link{
 		border: none;
 	}
+	.py-4 > a{
+		font-size: 1.5em;
+	}
 	.nav{
 		justify-content: end !important;
 	}
