@@ -12,17 +12,19 @@
 		<div>
 			<mat-icon class="close" (click)="closeProj()">close</mat-icon>
 		</div>
-		<div class="">
-			{{theProject.name}}
-		</div>
-		<div class="">
-			{{theProject.desc}}
-		</div>
-		<div class="skills">
-			<div *ngFor="let tag of theProject.tags" [className]="tag.color" >
-				{{tag.skill}}
+		<div class="p-4">
+			<div class="">
+				{{theProject.name}}
 			</div>
+			<div class="">
+				{{theProject.desc}}
+			</div>
+			<div class="skills">
+				<div *ngFor="let tag of theProject.tags" [className]="tag.color" >
+					{{tag.skill}}
+				</div>
+			</div>	
+			<a *ngIf="theProject.link"  href="{{theProject.link}}" target="_blank" class="link">Link To Site </a>
 		</div>	
-		<a *ngIf="theProject.link"  href="{{theProject.link}}" target="_blank" class="link">Link To Site </a>
 	</div>	
 </div>
