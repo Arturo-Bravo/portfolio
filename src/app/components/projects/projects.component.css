@@ -1,24 +1,36 @@
+.project{
+	margin: 1em 0;
+}
+.project:hover{
+	color: var(--flame) !important;
+}
 .title{
 	min-height: 10em;
 	display: flex;
 	align-items: flex-end;
 	background-repeat: no-repeat;
 	background-position: center center;
-	width: 25vw;
-	height: 25vw;
+	width: 15vw;
+	height: 15vw;
 	object-fit: cover;
 	cursor: pointer;
 	padding: 0;
 }
+.title:hover + .title-text{
+	color: var(--flame);
+}
 .title-text{
-	background-color: var(--red);
-	color: var(--pearl);
-	border: 3px solid var(--pearl);
+	background-color: var(--pearl);
+	color: var(--red);
+	/* border: 3px solid var(--pearl); */
 	border-left: none;
 	font-size: calc(0.5em + 2vw);
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+}
+.title-text:hover{
+	color: var(--flame);
 }
 
 .link{
@@ -96,9 +108,6 @@
 	/* background-image: url(../pics/frupal.png); */
 }
 
-.project{
-	margin: 1em 0;
-}
 
 .desc{
 	background-color: var(--red);
