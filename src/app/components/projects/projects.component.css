@@ -24,7 +24,7 @@
 	color: var(--red);
 	/* border: 3px solid var(--pearl); */
 	border-left: none;
-	font-size: calc(0.5em + 2vw);
+	font-size: calc(0.5em + 1.4vw);
 	display: flex;
 	align-items: center;
 	cursor: pointer;
