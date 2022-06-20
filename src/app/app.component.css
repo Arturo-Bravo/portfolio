@@ -135,7 +135,3 @@ ul{
 	color: inherit;
 	text-decoration: none;
 }
-
-router-outlet + *{
-	height: 100%;
-}
