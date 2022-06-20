@@ -16,6 +16,7 @@
 	color: var(--red) !important;
 	border: 2px solid transparent;
 	position: relative;
+	cursor: pointer;
 }
 .nav-link::after{
 	display: block;
@@ -61,9 +62,13 @@ header{
 	}	
 	.nav-link:hover{
 		border: none;
+		color: var(--flame) !important;
 	}
 	.nav-link{
 		border: none;
+	}
+	.nav-link::after{
+		display: none;
 	}
 	.py-4 > a{
 		font-size: 1.5em;
