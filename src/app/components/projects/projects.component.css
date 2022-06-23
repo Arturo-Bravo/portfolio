@@ -161,7 +161,7 @@
 	padding: 1em;
 	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 	animation: fade-in;
-	animation-duration: 0.6s;
+	animation-duration: 0.4s;
 	overflow-y: scroll;
 }
 
@@ -175,7 +175,7 @@
 }
 
 .unFade{
-	transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
 	opacity: 0;
 }
 

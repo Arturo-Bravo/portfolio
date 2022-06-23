@@ -48,7 +48,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 	}
 	100%{
 		filter: blur(10px);
-		transform: scale(1);
+		transform: scale(1.05);
 	}
 }
 
@@ -58,7 +58,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @keyframes fast{
 	0%{
 		filter: blur(10px);
-		transform: scale(1);
+		transform: scale(1.05);
 	}
 	100%{
 		filter: none !important;
