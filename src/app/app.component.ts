@@ -20,14 +20,17 @@ export class AppComponent {
   toggleMenu(){
     this.navShow = !this.navShow
     let menu = document.getElementById('menu')
+    let elems = document.getElementsByClassName('cover-link') as HTMLCollectionOf<HTMLElement>;
     if(this.navShow === true){
       menu?.classList.add('hv100')
-      let elems = document.getElementsByClassName('nav-link') as HTMLCollectionOf<HTMLElement>;
       for(let i=0; i<elems.length; i++){
         elems[i].style.color = "#80191c"
       }
     } else{
       menu?.classList.remove('hv100')
+      for(let i=0; i<elems.length; i++){
+        elems[i].style.color = "transparent"
+      }
     }
   }
 

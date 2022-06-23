@@ -64,14 +64,17 @@ header{
 	.nav-item{
 		display: none;
 	}	
-	.nav-link:hover{
+	.nav-link:hover,
+	.cover-link:hover{
 		border: none;
 		color: var(--flame) !important;
 	}
-	.nav-link{
+	.nav-link,
+	.cover-link{
 		border: none;
 	}
-	.nav-link::after{
+	.nav-link::after,
+	.cover-link::after{
 		display: none;
 	}
 	.py-4 > a{
@@ -104,8 +107,12 @@ header{
 	.hv100{
 		height: 100vh !important;
 	}
-	.fullMenu .nav-link{
-		color: transparent !important;
+	.cover-link{
+		color: transparent;
+
+		position: relative;
+		cursor: pointer;
+		text-decoration: none;
 	}
 
 	@keyframes slide-down {
