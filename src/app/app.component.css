@@ -95,13 +95,13 @@ header{
 	.fullMenu{
 		display: block !important;
 		/* height: 100vh; */
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0;
 		background-color: var(--pearl);
 		z-index: 1;
 		/* animation: slide-down 0.4s; */
-		transition-property: all;
+		transition-property: height;
 		transition-duration: 0.4s;
 		width: 100vw;
 		height: 0;
@@ -115,6 +115,9 @@ header{
 		position: relative;
 		cursor: pointer;
 		text-decoration: none;
+	}
+	#close{
+		color: transparent;
 	}
 
 	@keyframes slide-down {
