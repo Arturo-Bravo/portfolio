@@ -52,6 +52,10 @@ header{
 	display: none;
 }
 
+#menu{
+	display: none;
+}
+
 .fullMenu{
 	display: none;
 }
@@ -77,22 +81,33 @@ header{
 		justify-content: end !important;
 	}
 	.menu{
-		display: block;
+		display: block !important;
 		text-align: end;
 		padding-right: 1em !important;
 		/* justify-content: end; */
 	}
+
 	.fullMenu{
-		display: block;
-		height: 100vh;
-		width: 100vw;
+		display: block !important;
+		/* height: 100vh; */
 		position: fixed;
 		top: 0;
 		left: 0;
 		background-color: var(--pearl);
 		z-index: 1;
-		animation: slide-down 0.4s;
+		/* animation: slide-down 0.4s; */
+		transition-property: all;
+		transition-duration: 0.4s;
+		width: 100vw;
+		height: 0;
 	}
+	.hv100{
+		height: 100vh !important;
+	}
+	.fullMenu .nav-link{
+		color: transparent !important;
+	}
+
 	@keyframes slide-down {
 		0%{
 			height: 10vh;

@@ -17,15 +17,18 @@ export class AppComponent {
     this.router = _router
   }
 
-  async toggleMenu(){
-    if(this.navShow === true){
-      let menu = document.getElementById('menu')
-      menu?.classList.add('slide-up')
-      await this.delay(300);
-      menu?.classList.remove('slide-up')
-    }
-
+  toggleMenu(){
     this.navShow = !this.navShow
+    let menu = document.getElementById('menu')
+    if(this.navShow === true){
+      menu?.classList.add('hv100')
+      let elems = document.getElementsByClassName('nav-link') as HTMLCollectionOf<HTMLElement>;
+      for(let i=0; i<elems.length; i++){
+        elems[i].style.color = "#80191c"
+      }
+    } else{
+      menu?.classList.remove('hv100')
+    }
   }
 
   onResize(event: { target: { innerWidth: any; }; }){
