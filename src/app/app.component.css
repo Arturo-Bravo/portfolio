@@ -53,7 +53,7 @@ header{
 }
 
 #menu{
-	display: none;
+	display: none !important;
 }
 
 .fullMenu{
@@ -89,7 +89,9 @@ header{
 		padding-right: 1em !important;
 		/* justify-content: end; */
 	}
-
+	#menu{
+		display: block !important;
+	}
 	.fullMenu{
 		display: block !important;
 		/* height: 100vh; */
