@@ -21,7 +21,7 @@ export class AppComponent {
     if(this.navShow === true){
       let menu = document.getElementById('menu')
       menu?.classList.add('slide-up')
-      await this.delay(600);
+      await this.delay(300);
       menu?.classList.remove('slide-up')
     }
 

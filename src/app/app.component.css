@@ -91,7 +91,7 @@ header{
 		left: 0;
 		background-color: var(--pearl);
 		z-index: 1;
-		animation: slide-down 0.6s;
+		animation: slide-down 0.4s;
 	}
 	@keyframes slide-down {
 		0%{
@@ -105,7 +105,7 @@ header{
 		color: transparent !important;
 	}
 	.slide-up{
-		animation: slide-up 0.8s;
+		animation: slide-up 0.4s;
 		animation-fill-mode: forwards;
 	}
 	@keyframes slide-up {
