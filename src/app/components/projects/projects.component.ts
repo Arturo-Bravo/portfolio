@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -6,7 +6,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./projects.component.css'],
   host: {class: 'fill'},
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent implements OnInit, OnDestroy {
 
   // colors: frameworks-yellow, languages-black, style-blue, other-orange, github-purple
   theProject: {name: string, pic: string, tags: {skill: string, color: string}[], desc: string, link?:string } | null = null
@@ -89,6 +89,14 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  ngOnDestroy(): void {
+    let elem = document.getElementsByClassName('toBlur') as HTMLCollectionOf<HTMLElement>;
+    for(let i = 0; i<elem.length; i++){
+      elem[i].classList.remove('blur')
+      elem[i].classList.remove('unBlur')
+    }
+    this.theProject = null
+  }
 
   selectProj(selected: {name: string, pic: string, tags: {skill: string, color: string}[], desc: string, link?:string }){
     this.theProject = selected
@@ -110,7 +118,7 @@ export class ProjectsComponent implements OnInit {
     let fade = document.getElementById('feature');
     fade?.classList.add('unFade')
 
-    await this.delay(600);
+    await this.delay(400);
     for(let i = 0; i<elem.length; i++){
       elem[i].classList.remove('blur')
       elem[i].classList.remove('unBlur')
