@@ -67,6 +67,22 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       This project was really cool to do. I learned a lot from it.`
     },
     {
+      name: "International Bulletin Board",
+      pic: "assets/pics/worldnotes.png",
+      tags: [
+        {skill: 'React', color: 'frame'},
+        {skill: 'Javascript', color: 'lang'},
+        {skill: 'CSS', color: 'style'},
+        {skill: 'HTML', color: 'style'},
+        {skill: 'Git', color: 'git'},
+      ],
+      desc: `Built a fullstack React app with 2 classmates. My role was heavily focused on the front-end side of the project. 
+      I also substantially helped to manage the work flow throughout development. Additionally, I assisted my group members 
+      to better understand React. Likewise, I also learned from them and I am proud of how smoothly we worked as a team.
+      `
+    }
+    ,
+    {
       name: "Kingdom of Frupal",
       pic: "assets/pics/frupal.png",
       tags: [
@@ -74,7 +90,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
         {skill: 'ncurses', color: 'frame'},
         {skill: 'Git', color: 'git'},
       ],
-      desc: `Developed a game with 4 other people following a scrum methodology for project management. The game was quite simple. You move around a 2d plane, finding tools,
+      desc: `Developed a game with 4 classmates following a scrum methodology for project management. The game was quite simple. You move around a 2d plane, finding tools,
       breaking obstacles, and finding treasure. The ultimate goal is to find the diamonds hidden somewhere in the map.
       <br/>
       <br/>
