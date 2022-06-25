@@ -1,24 +1,41 @@
+
+.projects{
+	background-color: var(--red);
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .project{
 	margin: 1em 0;
+	overflow: hidden;
 }
 .project:hover{
 	color: var(--flame) !important;
+	cursor: pointer;
 }
+.project:hover .title-text{
+	color: var(--flame);
+}
+
+.project:hover .title{
+	filter: brightness(125%);
+}
+
 .title{
 	min-height: 10em;
 	display: flex;
 	align-items: flex-end;
 	background-repeat: no-repeat;
 	background-position: center center;
-	width: 15vw;
+	/* width: 15vw; */
 	height: 15vw;
 	object-fit: cover;
 	cursor: pointer;
 	padding: 0;
 }
-.title:hover + .title-text{
-	color: var(--flame);
-}
+
 .title-text{
 	background-color: var(--pearl);
 	color: var(--red);
@@ -90,22 +107,6 @@
 .top::after{
 	border-top: 1px solid #4f2582;
   transform-origin: 100% 0 0;
-}
-
-
-#teach{
-	/* background-image: url(../pics/hero-image.jpg); */
-	background-position: 40% 70%;
-}
-#ctran{
-	/* background-image: url(../pics/c-tran.png); */
-}
-#steam{
-	/* background-image: url(../pics/steamcompare2.png); */
-	background-position: center top;
-}
-#frupal{
-	/* background-image: url(../pics/frupal.png); */
 }
 
 
@@ -182,9 +183,4 @@
 .thumb{
 	width: 60%;
 	object-fit: cover;
-}
-
-.projects{
-	background-color: var(--red);
-	flex: 1 1 auto;
 }

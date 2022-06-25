@@ -1,9 +1,11 @@
-<div class="projects p-4 toBlur back layers">
-	<div *ngFor="let project of projects" class="project row justify-content-center" >
-			<img [src]="project.pic" [id]="project.pic" class="title col-8" alt="{{project.name}} image" (click)="selectProj(project)">
-			<div class="title-text px-2 col-4" (click)="selectProj(project)">
+<div class="projects p-4 toBlur back layers container-fluid">
+	<div *ngFor="let project of projects" class="project col-12 col-md-10 justify-content-center container-fluid" (click)="selectProj(project)">
+		<div class="row d-flex justify-content-center">
+			<img [src]="project.pic" [id]="project.pic" class="title col-8 col-md-6" alt="{{project.name}} image" >
+			<div class="title-text col-4" >
 				{{project.name}}
 			</div>
+		</div>
 	</div>
 </div>
 
