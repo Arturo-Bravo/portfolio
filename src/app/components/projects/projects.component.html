@@ -10,11 +10,11 @@
 </div>
 
 <div *ngIf="theProject" class="pop">
-	<div class="" id="feature">
+	<div class="position-relative" id="feature">
 		<div>
 			<mat-icon class="close" (click)="closeProj()">close</mat-icon>
 		</div>
-		<div class="p-4">
+		<div class="p-4 position-relative">
 			<div class="h2">
 				{{theProject.name}}
 			</div>
@@ -29,9 +29,9 @@
 					{{tag.skill}}
 				</div>
 			</div>	
-			<a *ngIf="theProject.link"  href="{{theProject.link}}" target="_blank" class="link">Link To Site </a>
+			<a *ngIf="theProject.link"  href="{{theProject.link}}" target="_blank" class="link"> <span>Link To Site</span></a>
 			<br>
-			<a href="{{theProject.gitLink}}" target="_blank" class="link">Link To Repo</a>
+			<a href="{{theProject.gitLink}}" target="_blank" class="link"><span>Link To Repo</span></a>
 		</div>	
 	</div>	
 </div>
