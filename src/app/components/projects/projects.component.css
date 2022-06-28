@@ -82,7 +82,7 @@
 	left: -3px;
 	z-index: 5;
 	transform: scale(0);
-	transition: transform 0.3s linear;
+	transition: transform 0.3s ease-in-out;
 }
 .link:hover::before{
 	transform: scale(1);
