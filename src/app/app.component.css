@@ -13,15 +13,18 @@
 }
 
 .nav-link{
-	color: var(--red) !important;
+	color: var(--red);
 	border: 2px solid transparent;
 	position: relative;
 	cursor: pointer;
 }
+.nav-link:hover{
+	color: var(--flame);
+}
 .nav-link::after{
 	display: block;
 	content: '';
-	border-bottom: 2px solid var(--red);
+	border-bottom: 2px solid var(--flame);
 	transform: scaleX(0);
 	transition: transform 0.3s linear;
 	transform-origin:  0% 50%;
