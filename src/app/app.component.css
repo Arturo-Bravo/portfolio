@@ -8,6 +8,15 @@
 	display: flex;
 	flex-flow: column;
 }
+
+.filler{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	flex-flow: column;
+	flex: 1 1 auto;
+}
 .text-primary{
 	flex: 0 1 auto;
 }
