@@ -51,7 +51,7 @@
       </div>
     </div>  
   </div>
-  <div [@routeAnimations]="getRouteAnimationData()" class="filler">
+  <div  *ngIf="router.url != '/'" [@routeAnimations]="getRouteAnimationData()" class="filler">
     <router-outlet></router-outlet>
   </div> 
 </div>
