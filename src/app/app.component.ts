@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ChildrenOutletContexts, Router } from '@angular/router';
+import { popIn } from './animations';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +8,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css'],
   host: {
     '(window:resize)': 'onResize($event)'
-  }
+  },
+  animations: [
+    popIn
+  ]
 })
 export class AppComponent {
   router: Router;
   title = 'Arturo Bravo';
   navShow: boolean = false;
-  constructor(private _router: Router) {
+  constructor(private _router: Router, private contexts: ChildrenOutletContexts) {
     this.router = _router
+  }
+
+  getRouteAnimationData() {
+    return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
   }
 
   async toggleMenu(){
