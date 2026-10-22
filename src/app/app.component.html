@@ -4,33 +4,63 @@
       <div class="container-fluid d-flex justify-content-around nav">
         <ul class="navbar-nav navbar flex-row">
           <li class="nav-item mx-1">
-            <a routerLink="/" routerLinkActive="current" [routerLinkActiveOptions]="{exact:true}" class="nav-link">Home</a>
+            <a
+              routerLink="/"
+              routerLinkActive="current"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="nav-link"
+              >Home</a
+            >
           </li>
           <li class="nav-item mx-1">
-            <a routerLink="/about" routerLinkActive="current" class="nav-link">About</a>
+            <a routerLink="/about" routerLinkActive="current" class="nav-link"
+              >About</a
+            >
           </li>
           <li class="nav-item mx-1">
-            <a routerLink="/projects" routerLinkActive="current" class="nav-link">Projects</a>
+            <a routerLink="/blog" routerLinkActive="current" class="nav-link"
+              >Blog</a
+            >
+          </li>
+          <li class="nav-item mx-1">
+            <a
+              routerLink="/projects"
+              routerLinkActive="current"
+              class="nav-link"
+              >Projects</a
+            >
           </li>
         </ul>
-        <div  class="menu"><mat-icon class="nav-link" (click)="toggleMenu()">menu</mat-icon></div>
-
+        <div class="menu">
+          <mat-icon class="nav-link" (click)="toggleMenu()">menu</mat-icon>
+        </div>
       </div>
     </nav>
   </header>
-  <div *ngIf="navShow" class="fullMenu d-flex justify-content-center align-items-center" id="menu">
+  <div
+    *ngIf="navShow"
+    class="fullMenu d-flex justify-content-center align-items-center"
+    id="menu"
+  >
     <div class="close">
       <mat-icon (click)="toggleMenu()">close</mat-icon>
     </div>
-    <ul class="h-75 d-flex flex-column justify-content-center align-items-center">
+    <ul
+      class="h-75 d-flex flex-column justify-content-center align-items-center"
+    >
       <li class="mx-1 py-4">
         <a routerLink="/" class="nav-link" (click)="toggleMenu()">Home</a>
       </li>
-      <li class=" mx-1 py-4">
+      <li class="mx-1 py-4">
         <a routerLink="/about" class="nav-link" (click)="toggleMenu()">About</a>
       </li>
       <li class="mx-1 py-4">
-        <a routerLink="/projects" class="nav-link" (click)="toggleMenu()">Projects</a>
+        <a routerLink="/blog" class="nav-link" (click)="toggleMenu()">Blog</a>
+      </li>
+      <li class="mx-1 py-4">
+        <a routerLink="/projects" class="nav-link" (click)="toggleMenu()"
+          >Projects</a
+        >
       </li>
     </ul>
   </div>
@@ -39,17 +69,31 @@
       <div class="col-10 col-md-8">
         <h1 class="p-2">Hello, I am Arturo Bravo</h1>
         <p class="px-4">
-          Please take a look around. The projects I have displayed are ones where I learned a great deal from or I genuinely enjoyed doing.
+          Please take a look around. The projects I have displayed are ones
+          where I learned a great deal from or I genuinely enjoyed doing.
         </p>
         <div id="porfavor" class="p-2">
-          I'm available for work: 
+          I'm available for work:
           <ul>
-            <li> <mat-icon class="me-2">contacts</mat-icon> LinkedIn: &nbsp;<a href="https://www.linkedin.com/in/arturogbravo" target="_blank" class="link">arturogbravo</a></li>
-            <li> <mat-icon class="me-2">forward_to_inbox</mat-icon> Email: &nbsp;<a href="mailto:arturobravo1st@gmail.com" class="link">arturobravo1st@gmail.com</a></li>
+            <li>
+              <mat-icon class="me-2">contacts</mat-icon> LinkedIn: &nbsp;<a
+                href="https://www.linkedin.com/in/arturogbravo"
+                target="_blank"
+                class="link"
+                >arturogbravo</a
+              >
+            </li>
+            <li>
+              <mat-icon class="me-2">forward_to_inbox</mat-icon> Email: &nbsp;<a
+                href="mailto:arturobravo1st@gmail.com"
+                class="link"
+                >arturobravo1st@gmail.com</a
+              >
+            </li>
           </ul>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
   <router-outlet></router-outlet>
 </div>
